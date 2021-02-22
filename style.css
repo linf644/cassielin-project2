@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Name_Sans_Display-Ultra.trial";
+    src: url(./assets/Name_Sans_Display-Ultra.trial.woff2) format("woff2");
+}
+@font-face {
+    font-family: "Name_Sans_Display-SemiBold.trial";
+    src: url(./assets/Name_Sans_Display-SemiBold.trial.woff2) format("woff2");
+}
+@font-face {
+    font-family: "Name_Sans_Display-ExtraBold.trial";
+    src: url(./assets/Name_Sans_Display-ExtraBold.trial.woff2) format("woff2");
+}
+body {
+    margin: 0;
+}
+.container {
+    background-color: black;
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+}
+.container2 {
+    background-color: white;
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+}
+.articlename h1{
+    font-family: "Name_Sans_Display-Ultra.trial";
+    font-size: 11.25rem;
+    width: 1371px;
+    height: 401px;
+    color: white;
+    margin-top: 25rem;
+    margin-left: 2.5rem;
+}
+.authorname {
+    display: flex;
+    font-family: PingFang SC;
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: white;
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.briefinfo {
+    font-family: "Name_Sans_Display-ExtraBold.trial";
+    font-size: 6.2rem;
+    -webkit-text-stroke: 2px white;
+    margin-left: 2.5rem;
+}
+.starter p {
+    font-family: PingFang SC;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: white;
+    margin-left: 2.5rem;
+    width: 55rem;
+}
+.arrow img {
+    display: flex;
+    margin-left: 63rem;
+    margin-top: -15rem;
+}
+.arrow img:hover {
+    animation: directing 1.5s both infinite ease-in-out;
+}
+@keyframes directing {
+    0% {margin-left: 63rem;}
+    50% {margin-left: 68rem;}
+    100% {margin-left: 63rem;}
+}
