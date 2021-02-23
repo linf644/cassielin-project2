@@ -24,7 +24,9 @@ body {
     overflow-y: scroll;
     width: 100vw;
     height: 100vh;
+    display: flex;
 }
+/* homepage */
 .articlename h1{
     font-family: "Name_Sans_Display-Ultra.trial";
     font-size: 11.25rem;
@@ -70,4 +72,71 @@ body {
     0% {margin-left: 63rem;}
     50% {margin-left: 68rem;}
     100% {margin-left: 63rem;}
+}
+
+/* index page */
+.wrapper {
+    display: flex;
+    margin-top: 9rem;
+    margin-left: 12rem;
+}
+.line {
+    width: 0;
+    height: 62rem;
+    border: 1px solid #000000;
+}
+.index ul {
+    list-style: none;
+    font-family: PingFang SC;
+    color: black;
+    font-size: 1.8rem;
+    margin-left: 12rem;
+    margin-top: -2rem;
+    line-height: 8rem;
+}
+.index a {
+    text-decoration: none;
+    color: black;
+}
+.punctuations {
+    font-family: "Name_Sans_Display-SemiBold.trial";
+    display: flex;
+}
+.questionmark {
+    font-size: 6.6rem;
+    margin-left: -28rem;
+    margin-top: 15rem;
+}
+.exclamation {
+    font-size: 6.6rem;
+    transform: rotate(24.61deg);
+    margin-top: 22.5rem;
+    margin-left: 28rem;
+}
+.apostrophe {
+    font-size: 10rem;
+    margin-top: 28rem;
+    margin-left: 18rem;
+}
+.period {
+    font-size: 6.6rem;
+    margin-top: 39rem;
+    margin-left: -20rem;
+}
+.colon {
+    font-size: 4.4rem;
+    margin-top: 49rem;
+    margin-left: -36rem;
+    transform: rotate(-25deg);
+}
+.semicolon {
+    font-size: 7.6rem;
+    margin-top: 47rem;
+    margin-left: 57rem;
+}
+.comma {
+    font-size: 15.6rem;
+    margin-top: 46rem;
+    margin-left: -19rem;
+    transform: rotate(-18deg);
 }
