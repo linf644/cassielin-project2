@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Name_Sans_Display-Ultra.trial";
+    src: url(./assets/Name_Sans_Display-Ultra.trial.woff2) format("woff2");
+}
+@font-face {
+    font-family: "Name_Sans_Display-SemiBold.trial";
+    src: url(./assets/Name_Sans_Display-SemiBold.trial.woff2) format("woff2");
+}
+@font-face {
+    font-family: "Name_Sans_Display-ExtraBold.trial";
+    src: url(./assets/Name_Sans_Display-ExtraBold.trial.woff2) format("woff2");
+}
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    background-color: black;
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+}
+.container2 {
+    background-color: white;
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.right {
+    width: 1151px;
+    height: 698px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12rem;
+    font-family:"Name_Sans_Display-SemiBold.trial";
+    font-size: 160px;
+    line-height: 104%;
+    color: #000000;
+    text-decoration: none;
+}

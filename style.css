@@ -13,6 +13,9 @@
 body {
     margin: 0;
 }
+a {
+    text-decoration: none;
+}
 .container {
     background-color: black;
     overflow-y: scroll;
@@ -140,3 +143,57 @@ body {
     margin-left: -19rem;
     transform: rotate(-18deg);
 }
+/* question mark page */
+.returnsign {
+    font-family: PingFang SC;
+    font-weight: 600;
+    font-size: 100px;
+    color: white;
+    text-decoration: none;
+    width: 113px;
+    height: 96px;
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 3.5rem;
+}
+.questionmarkcontent {
+    width: 55rem;
+    height: 35rem;
+    font-family: PingFang SC;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 120%;
+    color: white;
+    transform: rotate(-9.13deg);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.choosingbuttons ul{
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.4rem;
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.choosingbuttons li {
+    margin: 7rem;
+    color: white;
+}
+.choosingbuttons li:hover {
+    background-color: white;
+    color: black;
+    width: 550px;
+    height: 117px;
+    border-radius: 58.5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
