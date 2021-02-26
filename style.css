@@ -196,4 +196,137 @@ a {
     justify-content: center;
     align-items: center;
 }
+/* exclamation mark page */
+.exclamationcontent {
+    width: 66rem;
+    font-family: PingFang SC;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 110%;
+    margin: 0 auto;
+}
+#exclamationmark:hover {
+    font-size: 8rem;
+    color: orange;
+}
+/* apostrophe page */
+.apostrophecontent {
+    width: 58rem;
+    font-family: PingFang SC;
+    font-size: 30px;
+    color: white;
+    line-height: 140%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+#semibold {
+    font-weight: 600;
+}
+#light {
+    font-weight: 300;
+}
+#thin {
+    font-weight: 200;
+}
+/* period page */
+.returnsign2 {
+    font-family: PingFang SC;
+    font-weight: 600;
+    font-size: 100px;
+    color: black;
+    text-decoration: none;
+    width: 113px;
+    height: 96px;
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 3.5rem;
+}
 
+@media only screen and (max-width: 375px) {
+    .articlename h1{
+        font-size: 100px;
+        width: 295px;
+        height: 401px;
+        color: white;
+        margin-top: 19rem;
+        margin-left: 1.7rem;
+        hyphens: auto;
+        word-wrap: break-word;
+    }
+    .authorname {
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin-top: 1.5rem;
+    }
+    .briefinfo {
+        font-size: 3.6rem;
+        -webkit-text-stroke: 1px white;
+        margin-left: 1.7rem;
+    }
+    .starter p {
+        font-weight: normal;
+        font-size: 1.6rem;
+        margin-left: 1.7rem;
+        width: 343px;
+    }
+    .arrow img {
+        display: flex;
+        margin-left: 15rem;
+        margin-top: 2rem;
+        width: 20%;
+        padding-bottom: 2rem;
+    }
+    .wrapper {
+        margin-top: 7rem;
+        margin-left: 4rem;
+    }
+    .line {
+        height: 62rem;
+    }
+    .index ul {
+        font-size: 1.8rem;
+        margin-left: 6rem;
+        margin-top: -2rem;
+        line-height: 8rem;
+    }
+    .questionmark {
+        font-size: 6.6rem;
+        margin-left: -28rem;
+        margin-top: 15rem;
+    }
+    .exclamation {
+        font-size: 6.6rem;
+        transform: rotate(24.61deg);
+        margin-top: 22.5rem;
+        margin-left: 28rem;
+    }
+    .apostrophe {
+        font-size: 10rem;
+        margin-top: 28rem;
+        margin-left: 18rem;
+    }
+    .period {
+        font-size: 6.6rem;
+        margin-top: 39rem;
+        margin-left: -20rem;
+    }
+    .colon {
+        font-size: 4.4rem;
+        margin-top: 49rem;
+        margin-left: -36rem;
+        transform: rotate(-25deg);
+    }
+    .semicolon {
+        font-size: 7.6rem;
+        margin-top: 47rem;
+        margin-left: 57rem;
+    }
+    .comma {
+        font-size: 15.6rem;
+        margin-top: 46rem;
+        margin-left: -19rem;
+        transform: rotate(-18deg);
+    }
+} 
