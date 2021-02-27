@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exclamation Mark</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="answerpagesstyle.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -23,9 +25,15 @@
       </p>
       <div class="choosingbuttons">
         <ul>
-          <a href="wrong.html"><li>Interesting</li></a>
+          <li style="cursor:pointer" onclick="openNav()">Interesting</li>
           <a href="right.html"><li>Uninteresting</li></a>
         </ul>
+      </div>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          Oops! Seems like you have a different opinion...
+        </div>
       </div>
     </div>
   </body>

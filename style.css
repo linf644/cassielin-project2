@@ -29,6 +29,12 @@ a {
     height: 100vh;
     display: flex;
 }
+.container3 {
+    background-color: white;
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+}
 /* homepage */
 .articlename h1{
     font-family: "Name_Sans_Display-Ultra.trial";
@@ -143,6 +149,17 @@ a {
     margin-left: -19rem;
     transform: rotate(-18deg);
 }
+.shake {
+    animation-name: shake; 
+    animation-duration: 1.5s; 
+    animation-fill-mode: both; 
+    animation-iteration-count: infinite;
+}
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+} 
 /* question mark page */
 .returnsign {
     font-family: PingFang SC;
@@ -196,6 +213,7 @@ a {
     justify-content: center;
     align-items: center;
 }
+
 /* exclamation mark page */
 .exclamationcontent {
     width: 66rem;
@@ -242,9 +260,109 @@ a {
     display: flex;
     margin-top: 1.5rem;
     margin-left: 3.5rem;
+    align-items: center;
 }
-
+.periodcontent {
+    font-family: PingFang SC;
+    font-size: 30px;
+    font-weight: normal;
+    width: 67.25rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#periods {
+    font-size: 100px;
+}
+#periods:hover {
+    color: orange;
+}
+.choosingbuttons2 ul{
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.4rem;
+    color: black;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.choosingbuttons2 li {
+    margin: 7rem;
+    color: black;
+}
+.choosingbuttons2 li:hover {
+    background-color: black;
+    color: white;
+    width: 550px;
+    height: 117px;
+    border-radius: 58.5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/* colons & semicolons page */
+.colonscontent {
+    font-family: PingFang SC;
+    font-size: 30px;
+    font-weight: normal;
+    width: 65rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#colons {
+    font-size: 70px;
+    font-weight: 900;
+    animation: shine 1.5s ease-in-out infinite both;
+}
+@keyframes shine {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 001;}
+}
+/* comma page */
+.commacontent {
+    font-family: PingFang SC;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 150%;
+    width: 75%;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#commas {
+    font-weight: 200;
+    letter-spacing: 2rem;
+}
+#commas:hover {
+    animation: spread 5s ease-in-out infinite both;
+}
+@keyframes spread {
+    0% {letter-spacing: 1rem;}
+    50% {letter-spacing: 3rem;}
+    100% {letter-spacing: 1rem;}
+}
+/* ending page */
+.endingcontent {
+    font-family: "Name_Sans_Display-SemiBold.trial";
+    color: white;
+    width: 80%;
+    font-size: 5rem;
+    display: flex;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.endingcontent:hover {
+    color: orange;
+}
+/* media query; have the website work in phone size */
 @media only screen and (max-width: 375px) {
+    /* homepage */
     .articlename h1{
         font-size: 100px;
         width: 295px;
@@ -278,55 +396,205 @@ a {
         width: 20%;
         padding-bottom: 2rem;
     }
+    /* toc page */
     .wrapper {
-        margin-top: 7rem;
+        margin-top: 6.5rem;
         margin-left: 4rem;
     }
     .line {
-        height: 62rem;
+        height: 45rem;
     }
     .index ul {
-        font-size: 1.8rem;
-        margin-left: 6rem;
+        width: 13rem;
+        font-size: 1.2rem;
+        margin-left: 1.5rem;
         margin-top: -2rem;
-        line-height: 8rem;
+        line-height: 5.3rem;
     }
     .questionmark {
-        font-size: 6.6rem;
-        margin-left: -28rem;
-        margin-top: 15rem;
+        font-size: 3rem;
+        margin-left: -6rem;
+        margin-top: 7rem;
+        line-height: 2rem;
     }
     .exclamation {
-        font-size: 6.6rem;
-        transform: rotate(24.61deg);
-        margin-top: 22.5rem;
-        margin-left: 28rem;
+        font-size: 3rem;
+        transform: rotate(-24.61deg);
+        margin-top: 17rem;
+        margin-left: -4rem;
     }
     .apostrophe {
+        width: 136px;
+        height: 58px;
         font-size: 10rem;
-        margin-top: 28rem;
-        margin-left: 18rem;
+        margin-top: 19rem;
+        margin-left: 3.5rem;
+        transform: rotate(23.35deg);
     }
     .period {
-        font-size: 6.6rem;
-        margin-top: 39rem;
-        margin-left: -20rem;
+        width: 23px;
+        height: 85px;
+        font-size: 4rem;
+        margin-top: 25rem;
+        margin-left: -13rem;
     }
     .colon {
-        font-size: 4.4rem;
-        margin-top: 49rem;
-        margin-left: -36rem;
-        transform: rotate(-25deg);
+        width: 28.03px;
+        height: 71.65px;
+        font-size: 3rem;
+        margin-top: 34rem;
+        margin-left: -6.5rem;
+        transform: rotate(0);
     }
     .semicolon {
+        width: 51px;
+        height: 109px;
         font-size: 7.6rem;
-        margin-top: 47rem;
-        margin-left: 57rem;
+        margin-top: 33rem;
+        margin-left: 11rem;
+        transform: rotate(70.29deg);
     }
     .comma {
-        font-size: 15.6rem;
-        margin-top: 46rem;
-        margin-left: -19rem;
-        transform: rotate(-18deg);
+        width: 28px;
+        height: 171px;
+        font-size: 12rem;
+        margin-top: 32rem;
+        margin-left: -8rem;
+        transform: rotate(-10deg);
+    }
+    /* question mark page */
+    .returnsign {
+        font-size: 100px;
+        font-weight: 200;
+        height: 50px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+    .questionmarkcontent {
+        font-size: 16px;
+        width: 19rem;
+        line-height: 120%;
+        transform: rotate(-9deg);
+        margin-bottom: 6rem;
+    }
+    .choosingbuttons ul{
+        font-size: 2.2rem;
+        margin: 0 auto;
+        display: block;
+    }
+    .choosingbuttons li {
+        background-color: white;
+        color: black;
+        width: 280.39px;
+        height: 59.65px;
+        border-radius: 58.5px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: -5rem;
+        margin-left: -0.1rem;
+    }
+    .choosingbuttons li:hover {
+        background-color: white;
+        color: black;
+        width: 280.39px;
+        height: 59.65px;
+        border-radius: 58.5px;
+        margin-top: -5rem;
+        margin-left: -0.1rem;
+    }
+    /* exclamation page */
+    .exclamationcontent {
+        width: 19.5rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 120%;
+        margin-top: 5rem;
+        margin-left: auto;
+        margin-bottom: 6rem;
+    }
+    #exclamationmark:hover {
+        font-size: 3rem;
+        color: orange;
+    }
+    /* apostrophe page */
+    .apostrophecontent {
+        width: 19.5rem;
+        font-size: 16px;
+        padding-top: 6rem;
+        padding-bottom: 7rem;
+    }
+    /* period page */
+    .returnsign2 {
+        font-size: 100px;
+        font-weight: 200;
+        height: 50px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+    .periodcontent {
+        font-size: 16px;
+        width: 19.5rem;
+        margin-top: 3rem;
+        margin-bottom: 6.5rem;
+    }
+    #periods {
+        font-size: 40px;
+    }
+    .choosingbuttons2 ul{
+        font-size: 2.2rem;
+        color: black;
+        margin: 0 auto;
+        display: block;
+    }
+    .choosingbuttons2 li {
+        background-color: black;
+        color: white;
+        width: 280.39px;
+        height: 59.65px;
+        border-radius: 58.5px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: -5rem;
+        margin-left: -0.1rem;
+    }
+    .choosingbuttons2 li:hover {
+        background-color: black;
+        color: white;
+        width: 280.39px;
+        height: 59.65px;
+        border-radius: 58.5px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+         margin-top: -5rem;
+        margin-left: -0.1rem;
+    }
+    /* colons & semicolons page */
+    .colonscontent {
+        font-size: 16px;
+        width: 19.5rem;
+        margin-top: 4rem;
+        margin-bottom: 7rem;
+    }
+    #colons {
+        font-size: 35px;
+        animation: shine 3s ease-in-out infinite both;
+    }
+    /* comma page */
+    .commacontent {
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 6.5rem;
+    }
+    #commas {
+        letter-spacing: 1rem;
+    }
+    /* ending page */
+    .endingcontent {
+        width: 80%;
+        font-size: 2.5rem;
+        margin-top: 5rem;
     }
 } 

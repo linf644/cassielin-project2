@@ -41,3 +41,59 @@ a {
     color: #000000;
     text-decoration: none;
 }
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+  }
+  .overlay-content {
+    display: flex;
+    width: 81rem;
+    font-family: "Name_Sans_Display-SemiBold.trial";
+    font-size: 10rem;
+    color: whitesmoke;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  @media only screen and (max-width: 375px) {
+    .right {
+        width: 20rem;
+        margin-top: 10rem;
+        font-size: 4rem;
+        line-height: 110%;
+    }
+    .overlay-content {
+        width: 20rem;
+        font-size: 4rem;
+        margin-top: 10rem;
+      }
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
